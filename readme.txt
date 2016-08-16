@@ -1,0 +1,1 @@
+A website for information about the Penn Aerospace Pitch Competition
