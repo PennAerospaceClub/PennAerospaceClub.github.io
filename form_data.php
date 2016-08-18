@@ -2,8 +2,8 @@
     if(isset($_POST['mail'])) {
           
         // EDIT THE 2 LINES BELOW AS REQUIRED
-        $email_to = "hello@themestreet.net";
-        $email_subject = "Contact from Berliner Template";
+        $email_to = "gregory@howards.org";
+        $email_subject = "Contact from PAC Pitch Website";
          
         
         $name = $_POST['name']; // required
@@ -19,7 +19,7 @@
          
         $email_message .= "Name: ".clean_string($name)."\n";
         $email_message .= "Email: ".clean_string($email_from)."\n";
-        $email_message .= "Subject: ".clean_string('Berliner - contact form')."\n";
+        $email_message .= "Subject: ".clean_string('PAC Pitch Event - contact form')."\n";
         $email_message .= "Message: ".clean_string($text)."\n";
          
          

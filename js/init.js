@@ -668,7 +668,7 @@
     function initialize() {
       var loc, map, marker, infobox, styles;
       
-      loc = new google.maps.LatLng(51.508606, -0.133789);
+      loc = new google.maps.LatLng(39.9522, -75.1932);
       
       map = new google.maps.Map(document.getElementById("map"), {
            zoom: 7,
@@ -682,7 +682,7 @@
       });
 
       marker = new google.maps.Marker({
-          position: new google.maps.LatLng(51.508606, -0.133789),
+          position: new google.maps.LatLng(39.9522, -75.1932),
           map: map,
           // title: 'VIEW ADDRESS',
           icon: 'images/pin.png' // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
