@@ -1,0 +1,17 @@
+.filter-section .filter_content .hover h6 {
+  visibility: visible !important;
+   opacity: 1 !important;
+   transform: translate(0,0) !important;
+}
+
+.filter-section .filter_content .hover p {
+   visibility: visible !important;
+   opacity: 1 !important;
+   transform: translate(0,0) !important;
+}
+
+.filter-section .filter_content .hover {
+   visibility: visible !important;
+   opacity: 1 !important;
+   transform: translate(0,0) !important;
+}
