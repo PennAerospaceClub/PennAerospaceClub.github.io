@@ -799,6 +799,7 @@ header nav ul a:focus {
 /* line 111, ../../scss/custom/_header.scss */
 .change .main-logo {
   fill: #0F122F;
+  content:url("icons/pac_logo_text.png") !important;
 }
 /* line 115, ../../scss/custom/_header.scss */
 .change ul a {
@@ -9428,4 +9429,9 @@ section {
   .filter-section #filter_content a > img {
     height: 100%;
   }
+}
+
+.change .main-logo img{
+  fill: #0F122F;
+  content:url("icons/pac_logo_text.png") !important;
 }
