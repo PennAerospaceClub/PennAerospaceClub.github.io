@@ -10623,7 +10623,7 @@ header nav ul a:focus {
 }
 /* line 63, ../scss/custom/_content.scss */
 .popup-email .blue-btn {
-  background-color: #62a7f4;
+  background-color: #47A4D5;
   height: 40px;
   line-height: 40px;
   color: #0f122f;
@@ -10921,7 +10921,7 @@ header nav ul a:focus {
 }
 /* line 321, ../scss/custom/_content.scss */
 .filter-section h3 {
-  color: #62a7f4;
+  color: #47A4D5;
 }
 /* line 323, ../scss/custom/_content.scss */
 .filter-section h3:before {
@@ -11543,7 +11543,7 @@ header nav ul a:focus {
   top: 0;
   content: "";
   width: 50%;
-  background-color: #62a7f4;
+  background-color: #47A4D5;
   min-height: 430px;
   left: 0;
 }
@@ -11560,7 +11560,7 @@ header nav ul a:focus {
 /* line 844, ../scss/custom/_content.scss */
 .follow-section .buzz {
   padding: 90px 0;
-  background-color: #62a7f4;
+  background-color: #47A4D5;
 }
 /* line 848, ../scss/custom/_content.scss */
 .follow-section article {
@@ -11817,7 +11817,7 @@ header nav ul a:focus {
 **************************************/
 /* line 1080, ../scss/custom/_content.scss */
 .contact-section {
-  background-color: #62a7f4;
+  background-color: #47A4D5;
   overflow: hidden;
 }
 /* line 1083, ../scss/custom/_content.scss */
@@ -17380,7 +17380,7 @@ p.notify {
 }
 /* line 133, ../scss/custom/_follower-slider.scss */
 .follow-section .customNavigation a:hover span {
-  color: #62a7f4;
+  color: #47A4D5;
 }
 /* line 139, ../scss/custom/_follower-slider.scss */
 .follow-section .customNavigation .prev {
@@ -17810,7 +17810,7 @@ section {
 
 /* line 15, ../scss/custom/_custom-rules.scss */
 .light-blue {
-  color: #62a7f4 !important;
+  color: #47A4D5 !important;
 }
 
 /* line 19, ../scss/custom/_custom-rules.scss */
