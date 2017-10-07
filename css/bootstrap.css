@@ -9991,8 +9991,17 @@ h1 {
 }
 
 /* line 105, ../scss/custom/_base.scss */
-h2 {
+
+@media (min-width: 485px) {
+	h2 {
   font-size: 65px;
+	}
+}
+
+@media (max-width: 485px) {
+	h2 {
+  font-size: 45px;
+	}
 }
 
 /* line 109, ../scss/custom/_base.scss */
@@ -10419,9 +10428,9 @@ header {
 }
 /* line 18, ../scss/custom/_header.scss */
 header .logo {
-  height: 60px;
+  height: 65px;
   margin-left: 0 !important;
-  width: 244px;
+  width: 65px;
   -moz-transition: none;
   -o-transition: none;
   -webkit-transition: none;
@@ -10434,7 +10443,7 @@ header .logo span {
   font-size: 56px;
 }
 /* line 30, ../scss/custom/_header.scss */
-header .main-logo {
+header .text {
   fill: #fff;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -10445,10 +10454,19 @@ header .main-logo {
 }
 /* line 36, ../scss/custom/_header.scss */
 header .small-logo {
-  display: none;
-  width: auto;
-  width: 40px;
-  height: 25px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  width: 65px;
+  height: 65px;
+}
+
+header .text-logo {
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  width: 0px;
+  height: 0px;
 }
 /* line 43, ../scss/custom/_header.scss */
 header .icon-menu_768 {
@@ -10500,7 +10518,7 @@ header nav ul li + li {
 }
 /* line 80, ../scss/custom/_header.scss */
 header nav ul a {
-  opacity: .5;
+  opacity: .6;
   color: #fff;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -10531,19 +10549,30 @@ header nav ul a:focus {
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   position: fixed;
 }
 /* line 107, ../scss/custom/_header.scss */
 .change .logo span {
   color: #0f122f;
 }
+
+.change .logo {
+	height: 50px;
+	width: 330px;
+	vertical-align: middle;
+	
+}
 /* line 111, ../scss/custom/_header.scss */
-.change .main-logo {
-  fill: #0F122F;
-  content: url("../icons/pac_logo_text.png") !important;
-  width: 200px;
-  height: 60px;
+.change .small-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.change .text-logo {
+  width: 267px;
+  height: 50px;
+  float: right;
 }
 /* line 115, ../scss/custom/_header.scss */
 .change ul a {
@@ -11044,6 +11073,7 @@ header nav ul a:focus {
   visibility: visible;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
+	margin-top: 10px;
   /* hacks for ie8 */
   display: block\9;
 }
@@ -11358,7 +11388,15 @@ header nav ul a:focus {
 **************************************/
 /* line 657, ../scss/custom/_content.scss */
 .pricing-section {
-  background-color: #0f122f;
+  background-image: url("../images/wharton.png");
+	background-repeat: no-repeat;
+  background-position: 50% 50%;
+	background-blend-mode: darken;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -ms-behavior: url(../js/backgroundsize.htc);
   text-align: center;
   overflow: hidden;
 }
@@ -11375,7 +11413,7 @@ header nav ul a:focus {
   position: absolute;
   content: "";
   width: 86px;
-  background-color: #f38d9d;
+  background-color: #fff;
   height: 2px;
   top: 100%;
   left: 50%;
@@ -11397,9 +11435,8 @@ header nav ul a:focus {
   position: relative;
   width: 100%;
   max-width: 203px;
-  height: 140px;
-  border: 2px solid #c8cad5;
-  margin: 0 auto 60px;
+  height: 70px;
+  
 }
 /* line 697, ../scss/custom/_content.scss */
 .pricing-section .num-price h2 {
@@ -11412,7 +11449,7 @@ header nav ul a:focus {
   position: relative;
   padding: 18px;
   background-color: #fff;
-  bottom: 30px;
+  bottom: 15px;
   width: auto !important;
   display: inline-block;
   text-align: center;
@@ -11438,7 +11475,7 @@ header nav ul a:focus {
 }
 /* line 725, ../scss/custom/_content.scss */
 .pricing-section article {
-  min-height: 535px;
+  height: 490px;
   background-color: #fff;
   padding: 30px;
   display: inline-block;
@@ -11467,7 +11504,7 @@ header nav ul a:focus {
 }
 /* line 745, ../scss/custom/_content.scss */
 .pricing-section article:hover {
-  background-color: #E37D7D;
+  background-color: #25a3d7;
   -moz-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
@@ -11475,7 +11512,7 @@ header nav ul a:focus {
 }
 /* line 751, ../scss/custom/_content.scss */
 .pricing-section article:hover .num-price > div {
-  background-color: #E37D7D;
+  background-color: #25a3d7;
 }
 /* line 755, ../scss/custom/_content.scss */
 .pricing-section article:hover .num-price h4 {
@@ -11563,7 +11600,7 @@ header nav ul a:focus {
   top: 0;
   content: "";
   width: 50%;
-  background-color: #0f122f;
+  background-color: #fff;
   min-height: 430px;
   right: 0;
 }
@@ -11613,7 +11650,7 @@ header nav ul a:focus {
 }
 /* line 875, ../scss/custom/_content.scss */
 .follow-section .follow-slider {
-  background-color: #0f122f;
+  background-color: #fff;
   height: 100%;
   display: block;
 }
@@ -11693,7 +11730,12 @@ header nav ul a:focus {
 .team-section .slider-wrap-team {
   width: 100%;
   height: 100%;
+	
   position: relative;
+}
+
+.team-section .slider-wrap-team img {
+	max-height: 384px !important;
 }
 /* line 953, ../scss/custom/_content.scss */
 .team-section .container > p {
@@ -11715,7 +11757,7 @@ header nav ul a:focus {
 /* line 968, ../scss/custom/_content.scss */
 .team-section h4 {
   font-family: "Montserrat", sans-serif;
-  color:#1F1F1F;
+  color:#fff;
 }
 /* line 971, ../scss/custom/_content.scss */
 .team-section .team {
@@ -11828,7 +11870,7 @@ header nav ul a:focus {
 **************************************/
 /* line 1080, ../scss/custom/_content.scss */
 .contact-section {
-  background-color: #47A4D5;
+  background-color: #dedcdc;
   overflow: hidden;
 }
 /* line 1083, ../scss/custom/_content.scss */
@@ -17293,9 +17335,9 @@ p.notify {
 }
 /* line 50, ../scss/custom/_follower-slider.scss */
 .follow-section .owl-carousel .owl-item .item p {
-  font-size: 35px;
+  font-size: 25px;
   margin-top: 50px;
-  color: #525890 !important;
+  color: #0f122f !important;
   line-height: 1.2;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -17364,7 +17406,7 @@ p.notify {
 .follow-section .customNavigation {
   position: absolute;
   right: 15px;
-  top: 110px;
+  top: 95px;
   z-index: 99;
 }
 /* line 117, ../scss/custom/_follower-slider.scss */
@@ -17375,7 +17417,7 @@ p.notify {
 }
 /* line 121, ../scss/custom/_follower-slider.scss */
 .follow-section .customNavigation a span {
-  color: #525890;
+  color: #0f122f;
   display: inline-block;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -17461,17 +17503,23 @@ p.notify {
 }
 /* line 49, ../scss/custom/_team-slider.scss */
 #team .owl-carousel .owl-item .item {
+  width:auto;
+  min-height:288px;
   position: relative;
   cursor: pointer;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #fff;
+  background-color: transparent;
 }
 /* line 55, ../scss/custom/_team-slider.scss */
 #team .owl-carousel .owl-item .item > img {
-  width: 100%;
+  width: auto;
+  max-width:100%;
+  min-height:288px;
+  display: block;
+  margin: auto;
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
@@ -17494,6 +17542,7 @@ p.notify {
   top: 0px;
   right: 0px;
   bottom: 0px;
+  min-height:288px;
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -17798,6 +17847,9 @@ p.notify {
     display: inline-block;
     margin: 5px 3px;
     width: auto;
+	  height: 490px !important;
+	  
+	  vertical-align: middle !important;
   }
   /* line 114, ../scss/custom/_pricing-slider.scss */
   .pricing-section .customNavigation {
@@ -18841,7 +18893,7 @@ section {
   /* line 983, ../scss/custom/_media.scss */
   header {
     background-color: #fff !important;
-    padding: 20px 0 !important;
+    padding: 3px 0 !important;
   }
   /* line 986, ../scss/custom/_media.scss */
   header .container {
@@ -18859,16 +18911,22 @@ section {
   }
   /* line 1001, ../scss/custom/_media.scss */
   header .logo {
-    height: auto;
-    width: auto;
+    width: 50px !important;
+    height: 50px !important;
   }
   /* line 1004, ../scss/custom/_media.scss */
   header .logo span {
     color: #0f122f;
   }
   /* line 1007, ../scss/custom/_media.scss */
-  header .logo .main-logo {
-    display: none !important;
+  header .logo .small-logo {
+	width: 50px;
+    height: 50px;
+  }
+	
+  header .logo .text-logo {
+	width: 0px;
+    height: 0px;
   }
   /* line 1010, ../scss/custom/_media.scss */
   header .logo .small-logo {
@@ -18887,7 +18945,7 @@ section {
   header .icon-menu_320 {
     display: block !important;
     font-size: 21px !important;
-    margin-top: 2px !important;
+    margin-top: 17px !important;
   }
 
   /* line 1034, ../scss/custom/_media.scss */
